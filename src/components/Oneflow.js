@@ -18,7 +18,7 @@ export default class Oneflow extends React.Component {
   constructor(props) {
    super(props)
    this.state = {
-      text: "My mission is to lead the country out of a bad situation of corruption, depression and slavery. After I rid the country of these vices, I will then organize and supervise a general election of a genuinely democratic civilian government",
+      text: "Uganda, formellt Republiken Uganda, är en inlandsstat i Östafrika. Landet gränsar till Kongo-Kinshasa i väster, Sydsudan i norr, Kenya i öster, Tanzania i söder och Rwanda i sydväst. Gränsen till Kenya och Tanzania går delvis genom Victoriasjön.",
       showPopover: false,
       modalIsOpen: false,
       edit:false

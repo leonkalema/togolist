@@ -13,8 +13,10 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
          <Oneflow />
- <h2>Hitta Togo List</h2>
+ <h2>Hitta Togo Lists</h2>
          <Hitta />
+		
+		
 
       </div>
     );

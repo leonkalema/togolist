@@ -2,7 +2,7 @@ import React from 'react'
 import _ from 'lodash';
 import Modal from 'react-modal';
 import ReactMapboxGl, { Layer, Feature, Popup } from "react-mapbox-gl";
-import {Buttons, Grid, Row, Col,ListGroup,ListGroupItem, FormGroup, InputGroup, FormControl, Glyphicon} from 'react-bootstrap';
+import {Buttons, Grid, Row, Col,ListGroup, ListGroupItem, FormGroup, InputGroup, FormControl, Glyphicon} from 'react-bootstrap';
 
 const Map = ReactMapboxGl({
   accessToken: "pk.eyJ1Ijoia2FsaWJveSIsImEiOiJjajdnN2tpYjIxMWlvMnF1d3hkaDQ2OXZnIn0.QdbzJWfOrCH7ZtL0At28wA"
@@ -29,13 +29,14 @@ export default class Hitta extends React.Component {
   constructor(props) {
    super(props)
    this.state = {
-      center: [-0.109970527, 51.52916347],
+      center: [32.6415245419889, 0.4445187945770357],
       zoom: [11],
       newPlace: new Map(),
       modalIsOpen: false,
       tempMarker:{},
-      tempPlaceArray:[{lng:-0.04594083341200417,lat:51.52799206565052,name:'Default1'}, {lng:-0.11356212307828173,lat:51.50469294415791,name:"Default2"}],
-      place:[{lng:-0.04594083341200417,lat:51.52799206565052,name:'Default1'}, {lng:-0.11356212307828173,lat:51.50469294415791,name:"Default2"}],
+      tempPlaceArray:[{lng:32.6415245419889,lat:0.4445187945770357,name:'Home'}, {lng:32.61119842529297,lat:0.4518080617012572,name:"Gym"}],
+	   
+      place:[{lng:32.6415245419889,lat:0.4445187945770357,name:'Home'}, {lng:32.61119842529297,lat:0.4518080617012572,name:"Gym"}],
       popupShowLabel: true,
     }
   }
@@ -81,13 +82,14 @@ export default class Hitta extends React.Component {
         position: 'relative'
       }}>
         <div >
+		
 		 <Grid>
     <Row className="show-grid">
       <Col xs={12} md={8}>
 		<Map
             center={this.state.center}
             zoom={this.state.zoom}
-            style="mapbox://styles/mapbox/streets-v10"
+            style="mapbox://styles/mapbox/streets-v9"
             containerStyle={{
               height: "50vh",
               width: "50vw"
